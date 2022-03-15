@@ -250,14 +250,14 @@ const dev = gulp.series(
 
 const build = gulp.series(
   clear,
-  images,
   fonts,
-  // content,
+  content,
+  assets,
   html,
   components,
   styles,
   scripts,
-  vendor
+  vendor,
 );
 
 exports.default = dev;
