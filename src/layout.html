@@ -1,0 +1,10 @@
+{% extends 'site.html' %} {% block styles %}
+<link rel="stylesheet" href="./css/index.css" />
+{% endblock %} {% block site %}
+<!-- Include Site Header -->
+<main>{% block content %}{% endblock %}</main>
+<!-- Include Site Footer -->
+{% endblock %} {% block scripts %}
+<script src="./js/vendor/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
+{% endblock %}

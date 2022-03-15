@@ -1,0 +1,37 @@
+{
+  "footer": {
+    "footerLinks": [
+      {
+        "label": "Terms & Conditions",
+        "to": "#"
+      },
+      {
+        "label": "Accessibiliy Help",
+        "value": "#"
+      },
+      {
+        "label": "Privacy Policy",
+        "to": "#"
+      },
+      {
+        "label": "AdChoices",
+        "value": "#"
+      }
+    ],
+    "socialIcons": [
+      {
+        "src": "../assets/icons/facebook.svg",
+        "to": "#"
+      },
+      {
+        "src": "../assets/icons/linkedin.svg",
+        "value": "#"
+      },
+      {
+        "src": "../assets/icons/youtube.svg",
+        "to": "#"
+      }
+    ],
+    "body": "<p>* Prudential Advisors is a brand name of The Prudential Insurance Company of America and its subsidiaries.</p><p>**Candidates in the Career Development Program cannot work for or be appointed with another insurance company, or registered with another broker-dealer.</p><p>The views expressed by each financial professional are based on his or her personal experiences and opinions. An individual’s own abilities, dedication, and achievements will have a direct impact on his or her success in the Financial Professional Associate position, potential for professional growth, and opportunities for other careers at The Prudential Insurance Company of America.</p><p>Offering financial planning and Investment advisory services through Pruco Securities, LLC (Pruco)(Member SIPC), under the marketing name Prudential Financial Planning Services (PFPS), pursuant to separate client agreement. Offering insurance and securities products and services as a registered representative of Pruco and an agent of issuing insurance companies.</p><p>Prudential is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, genetics, disability, age, veteran status, or any other characteristic protected by law. The Prudential Insurance Company of America, Newark, NJ and its affiliates.</p><p>EEO is the law posterPDF file opens in a new window and Supplement.PDF file opens in a new window</p><p>People with Disabilitiesopens in new window</p><p>Prudential is an Employer that participates in E-Verify. See the E-Verify notice.Opens in a new window Learn about your right to work.PDF file opens in a new window</p><p>© 2021 Prudential Financial, Inc. and its related entities.</p><p>1002376-00003-00</p>"
+  }
+}

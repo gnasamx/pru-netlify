@@ -1,0 +1,7 @@
+{% extends 'ui-kit.html' %} {% block content %} {% macro SecondaryButton(data)
+%}
+<a class="btn btn-secondary secondary-button">{{data.label}}</a>
+{% endmacro %}
+
+<!-- Uikit secondary button -->
+{{ SecondaryButton(components.secondaryButton) }} {% endblock %}

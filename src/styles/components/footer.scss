@@ -1,0 +1,71 @@
+.footer {
+  background: $footer-gradient;
+  padding: space(12) 0;
+
+  &__links {
+    padding-bottom: space(3);
+    border-bottom: border(1) solid $white;
+
+    &-singlelink {
+      a {
+        @extend .body-sm-regular;
+
+        color: $white;
+        text-decoration: none;
+        margin-right: space(7);
+        position: relative;
+
+        &:before {
+          content: "\A";
+          width: space(1);
+          height: space(1);
+          border-radius: 50%;
+          background: $white;
+          margin-right: space(3);
+          position: absolute;
+          top: 50%;
+          right: 100%;
+        }
+      }
+
+      &:first-child a:before {
+        display: none;
+      }
+    }
+  }
+
+  &__socialicons {
+    padding: space(7) 0;
+
+    &-icon {
+      margin-right: space(4);
+    }
+  }
+
+  &__links,
+  &__socialicons {
+    ul {
+      padding-left: 0;
+
+      li {
+        display: inline-block;
+        list-style-type: none;
+      }
+    }
+  }
+
+  &__bodytext {
+    @extend .body-sm-bold;
+
+    color: $white;
+  }
+
+  @include media-breakpoint-up(xl) {
+    &__links,
+    &__socialicons {
+      ul {
+        text-align: center;
+      }
+    }
+  }
+}

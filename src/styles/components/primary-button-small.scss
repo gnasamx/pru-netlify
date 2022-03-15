@@ -1,0 +1,17 @@
+.primary-button-small {
+  font-family: $open-sans-bold;
+  font-size: $font-size-sm;
+  font-weight: 700;
+  line-height: 1.42;
+  padding-top: space(2);
+  padding-right: $button-mobile-padding-x;
+  padding-bottom: space(2);
+  padding-left: $button-mobile-padding-x;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $hover-blue;
+    border-color: $hover-blue;
+  }
+}

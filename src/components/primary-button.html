@@ -1,0 +1,6 @@
+{% extends 'ui-kit.html' %} {% block content %} {% macro PrimaryButton(data) %}
+<a class="btn btn-primary primary-button">{{data.label}}</a>
+{% endmacro %}
+
+<!-- Uikit primary button -->
+{{ PrimaryButton(components.primaryButton) }} {% endblock %}

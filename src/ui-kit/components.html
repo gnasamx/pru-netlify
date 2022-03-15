@@ -1,0 +1,13 @@
+{% extends 'ui-kit.html' %} {% block content %}
+<div>
+  <h2>Components</h2>
+  <hr />
+  <ul class="ps-5">
+    {% for item in pages.uiKit.components | sort(false, false, 'label') %}
+    <li>
+      <a href="{{item.to}}">{{item.label}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}

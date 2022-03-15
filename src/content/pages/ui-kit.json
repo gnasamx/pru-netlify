@@ -1,0 +1,30 @@
+{
+  "components": [
+    {
+      "label": "Primary Button",
+      "to": "/components/primary-button.html"
+    },
+    {
+      "label": "Primary Button Small",
+      "to": "/components/primary-button-small.html"
+    },
+    {
+      "label": "Secondary Button",
+      "to": "/components/secondary-button.html"
+    },
+    {
+      "label": "Secondary Button Small",
+      "to": "/components/secondary-button-small.html"
+    },
+    {
+      "label": "Footer",
+      "to": "/components/footer.html"
+    }
+  ],
+  "pages": [
+    {
+      "label": "Homepage",
+      "to": "/homepage.html"
+    }
+  ]
+}

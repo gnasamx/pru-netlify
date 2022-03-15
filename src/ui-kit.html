@@ -1,0 +1,48 @@
+{% extends 'site.html' %} {% block styles %}
+<link rel="stylesheet" href="../css/index.css" />
+{% endblock %} {% block site %}
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container py-3">
+      <a href="/"> <span class="navbar-brand">UI Kit</span></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/theme.html">Theme</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/components.html"
+              >Components</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/templates.html">Templates</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main class="container">
+  <div class="py-4">{% block content %}{% endblock %}</div>
+</main>
+<footer class="py-4 bg-dark text-dark bg-opacity-10">
+  <div class="container">
+    <span>For internal use only</span>
+  </div>
+</footer>
+{% endblock %} {% block scripts %}
+<script src="../js/vendor/bootstrap.bundle.min.js"></script>
+<script src="../js/main.js"></script>
+{% endblock %}

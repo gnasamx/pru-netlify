@@ -1,0 +1,202 @@
+{% extends 'ui-kit.html' %} {% from "components/primary-button.html" import
+PrimaryButton %} {% from "components/secondary-button.html" import
+SecondaryButton %} {% from "components/primary-button-small.html" import
+PrimaryButtonSmall %} {% from "components/secondary-button-small.html" import
+SecondaryButtonSmall %}{% block content %}
+
+<div>
+  <h2>Theme</h2>
+  <hr />
+  <h3 class="mb-4">Colors</h3>
+  <div class="row">
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-white" style="background-color: #07639d">
+        Primary / Mid Blue
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-white" style="background-color: #001f45">
+        Primary / Dark Blue
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-black border" style="background-color: #ffffff">
+        Primary / White
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-black" style="background-color: #ffd71e">
+        Secondary / Yellow
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-black" style="background-color: #98c3de">
+        Secondary / Light Blue
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-black" style="background-color: #e3f2f4">
+        Secondary / Lighter Blue
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-white" style="background-color: #ee0006">
+        Tertiary / Red
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-black" style="background-color: #ffe570">
+        Hover / Yellow
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-white" style="background-color: #2189cb">
+        Hover / Blue
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-white" style="background-color: #1a1e1d">
+        Text / Black
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-white" style="background-color: #0066cc">
+        Text / Link
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-black border" style="background-color: #f2f2f2">
+        Gray Lightest
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-black border" style="background-color: #ebebeb">
+        Gray Lighter Extra
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-black" style="background-color: #cccccc">
+        Gray Lighter
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-black" style="background-color: #999999">
+        Gray Light
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-black" style="background-color: #666666">
+        Gray
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-white" style="background-color: #333333">
+        Gray Dark
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="p-4 mb-4 text-white" style="background-color: #222222">
+        Gray Darker
+      </div>
+    </div>
+  </div>
+
+  <h3 class="mb-4">Buttons</h3>
+  <div class="row mb-5">
+    <div class="col">
+      <div>
+        <p>{{ PrimaryButton({label: "Button Primary", to: "#" })}}</p>
+        <p>{{ SecondaryButton({label: "Button Secondary", to: "#" })}}</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="mb-4">Small Buttons</h3>
+  <div class="row mb-5">
+    <div class="col">
+      <div>
+        <p>{{ PrimaryButtonSmall({label: "Join Us", to: "#" })}}</p>
+        <p>{{ SecondaryButtonSmall({label: "Join US", to: "#" })}}</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="mb-4">Typography</h3>
+  {{ makeDesktopTypography(1, 80, 96) }}
+  <hr />
+  {{ makeDesktopTypography(2, 50, 60) }}
+  <hr />
+  {{ makeDesktopTypography(3, 35, 42) }}
+  <hr />
+  {{ makeDesktopTypography(4, 25, 30) }}
+  <hr />
+  {{ makeDesktopTypography(5, 20, 24) }}
+  <hr />
+  {{ makeDesktopTypography(6, 16, 19) }}
+  <hr />
+  <div class="row py-4">
+    <div class="col-lg-2 col-12">
+      <div class="mb-lg-0 mb-3">{{makeDisplay("display-2", "Body")}}</div>
+    </div>
+    <div class="col-lg-6 col-12">
+      <div
+        class="mb-lg-0 mb-3 d-flex flex-column justify-content-lg-around h-100"
+      >
+        <p class="body-md-regular">AaBbCc01234</p>
+        <p class="body-md-bold">AaBbCc01234</p>
+        <p class="body-md-bold-italic">AaBbCc01234</p>
+        <p class="body-md-light-italic">AaBbCc01234</p>
+        <p class="body-sm-regular">AaBbCc01234</p>
+        <p class="body-sm-bold">AaBbCc01234</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="d-flex flex-column justify-content-lg-around h-100">
+        <p>Open Sans / 18px / 25 Line height / regular</p>
+        <p>Open Sans / 18px / 25 Line height / Bold</p>
+        <p>Open Sans / 18px / 25 Line height / Bold Italic</p>
+        <p>Open Sans / 18px / 25 Line height / Light Italic</p>
+        <p>Open Sans / 14px / 20 Line height / regular</p>
+        <p>Open Sans / 14px / 20 Line height / Bold</p>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+
+  <!-- Macros -->
+
+  {% macro makeDesktopTypography(level, children="AaBbCc01234", fontSize,
+  lineHeight) %}
+  <div class="row py-5">
+    <div class="col-lg-2 col-12">
+      <div class="mb-lg-0 mb-4">{{makeDisplay("display-2", "h" + level)}}</div>
+    </div>
+    <div class="col-lg-6 col-12">
+      <div
+        class="mb-lg-0 mb-4 d-flex flex-column justify-content-lg-around h-100"
+      >
+        {{ makeHeading(level, children)}} {{makeDisplay("display-" + level,
+        children)}}
+      </div>
+    </div>
+    <div class="col-lg-4 col-12">
+      <div class="d-flex flex-column justify-content-lg-around h-100">
+        <div>
+          Prudential Modern / {{fontSize}}px / {{lineHeight}} Line height / Bold
+        </div>
+        <div>
+          Prudential Modern / {{fontSize}}px / {{lineHeight}} Line height /
+          Light
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endmacro%} {% macro makeHeading(level, children) %}
+  <h{{level}}>{{children}}</h{{level}}>
+  {% endmacro%} {% macro makeDisplay(class, children) %}
+  <div class="{{class}}">{{children}}</div>
+  {% endmacro%}
+</div>
