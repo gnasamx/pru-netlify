@@ -250,12 +250,15 @@ const dev = gulp.series(
 
 const build = gulp.series(
   clear,
-  fonts,
-  content,
-  assets,
-  html,
-  components,
+  componentJsonOutput,
+  pageJsonOutput,
+  siteJsonOutput,
   styles,
+  fonts,
+  images,
+  components,
+  uiKit,
+  html,
   scripts,
   vendor,
 );
